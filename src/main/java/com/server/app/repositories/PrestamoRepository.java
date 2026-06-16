@@ -9,6 +9,5 @@ import java.util.List;
 
 @Repository
 public interface PrestamoRepository extends JpaRepository<Prestamo, Long> {
-    List<Prestamo> findByUsuarioId(User usuario);
-    Integer countByUsuarioId(Integer usuarioId);
-}
+    List<Prestamo> findByUsuario(User usuario);
+    Integer countByUsuarioId(int usuarioId);}
