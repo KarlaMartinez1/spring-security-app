@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 import java.math.BigDecimal;
 
 @Component
-public class ResumenCrecitoMapper {
+public class ResumenCreditoMapper {
     public ResumenCreditoResponse toResumenCreditoResponse(Integer cantidad, BigDecimal total, BigDecimal saldo) {
         return ResumenCreditoResponse.builder()
                 .cantidadPrestamos(cantidad != null ? cantidad : 0)

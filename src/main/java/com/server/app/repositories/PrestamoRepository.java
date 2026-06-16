@@ -1,4 +1,4 @@
-package com.server.app.repositories.finanzas;
+package com.server.app.repositories;
 
 import com.server.app.entities.Prestamo;
 import com.server.app.entities.User;
@@ -10,5 +10,5 @@ import java.util.List;
 @Repository
 public interface PrestamoRepository extends JpaRepository<Prestamo, Long> {
     List<Prestamo> findByUsuarioId(User usuario);
-    Integer countByUsuarioId(Long usuarioId);
+    Integer countByUsuarioId(Integer usuarioId);
 }

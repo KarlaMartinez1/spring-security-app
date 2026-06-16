@@ -1,4 +1,4 @@
-package com.server.app.repositories.finanzas;
+package com.server.app.repositories;
 
 import com.server.app.entities.PlanPago;
 import com.server.app.entities.User;
